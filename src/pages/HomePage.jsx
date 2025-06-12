@@ -1,4 +1,6 @@
-import Hero from "../layout/Hero";
+
+import ProductCard from "../components/ProductCard";
+
 
 export default function HomePage() {
   return (
