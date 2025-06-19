@@ -6,6 +6,9 @@ import womenImg from "../assets/women.jpg";
 import kidsImg from "../assets/kids.jpg";
 import accessoriesImg from "../assets/accessories.jpg";
 
+
+
+
 export default function HomePage() {
   return (
     <PageContent>
@@ -232,6 +235,224 @@ export default function HomePage() {
 
         </div>
       </section>
+
+
+
+
+{/* Vita Classic Product Section */}
+<section className="w-full max-w-[414px] mx-auto px-6 mt-12">
+  {/* Yeşil zeminli üst + alt alan */}
+  <div className="bg-[#23856D] text-white px-6 pt-8 pb-4 rounded flex flex-col items-center text-center">
+    {/* Üst metinler */}
+    <p className="text-sm tracking-widest uppercase">Summer 2020</p>
+    <h3 className="text-xl font-bold mt-2">Vita Classic Product</h3>
+    <p className="text-sm text-white/80 leading-relaxed mt-2">
+      We know how large objects will act, but things on a small scale.
+    </p>
+    <p className="text-lg font-semibold mt-4">$16.48</p>
+    <button className="bg-[#38CB89] text-white py-2 px-6 rounded text-sm font-medium mt-3">
+      ADD TO CART
+    </button>
+
+    {/* Ürün görseli */}
+    <div className="w-full mt-6">
+      <img
+        src="/src/assets/promotion.png" 
+        alt="Vita Classic Product"
+        className="w-full object-cover rounded"
+      />
+    </div>
+  </div>
+</section>
+
+
+{/* Neural Universe Section */}
+<section className="w-full max-w-[414px] mx-auto px-6 mt-12 flex flex-col gap-8">
+  {/* Üst Metin Bloğu */}
+  <div className="text-center">
+    <p className="text-sm text-gray-500 tracking-widest uppercase">Summer 2020</p>
+    <h2 className="text-2xl font-bold mt-2 leading-tight">
+      Part of the <br /> Neural Universe
+    </h2>
+    <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+      We know how large objects will act, but things on a small scale.
+    </p>
+
+    <div className="flex flex-col gap-3 mt-6 items-center">
+      <button className="bg-[#23A6F0] text-white px-6 py-2 rounded text-sm font-medium">
+        BUY NOW
+      </button>
+      <button className="border border-[#23A6F0] text-[#23A6F0] px-6 py-2 rounded text-sm font-medium">
+        LEARN MORE
+      </button>
+    </div>
+  </div>
+
+  {/* Görsel + Alt Bilgiler */}
+  <div className="flex flex-col items-center text-center">
+    <img
+      src="/src/assets/neurel.png" // görsel yolunu kendi dosyana göre ayarla
+      alt="Winter Clothing"
+      className="w-full object-cover rounded mb-4"
+    />
+
+    <p className="text-sm text-blue-600 font-medium uppercase tracking-wide">Practice Advice</p>
+    <h3 className="text-xl font-bold mt-1">Featured Products</h3>
+    <p className="text-sm text-gray-500 mt-2 leading-snug px-2">
+      Problems trying to resolve the conflict between the two major
+    </p>
+  </div>
+</section>
+
+
+
+{/* Featured Products Section */}
+<section className="w-full max-w-[414px] mx-auto px-6 mt-12">
+  {/* Başlıklar */}
+  <div className="text-center">
+    <p className="text-sm text-blue-600 font-medium uppercase tracking-wide">Practice Advice</p>
+    <h2 className="text-2xl font-bold mt-1">Featured Products</h2>
+    <p className="text-sm text-gray-500 mt-2 leading-snug">
+      Problems trying to resolve the conflict between the two major
+    </p>
+  </div>
+
+  {/* Kart */}
+  <div className="mt-8 bg-white rounded shadow-sm overflow-hidden">
+    {/* Görsel ve NEW etiketi */}
+    <div className="relative">
+      <img
+        src="/src/assets/featured.jpg" 
+        alt="Product"
+        className="w-full h-52 object-cover"
+      />
+      <span className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+        NEW
+      </span>
+    </div>
+
+    {/* Kart Metinleri */}
+    <div className="p-4 flex flex-col gap-2">
+      {/* Etiketler */}
+      <div className="text-xs text-gray-400 space-x-2">
+        <span>Google</span>
+        <span>Trending</span>
+        <span>New</span>
+      </div>
+
+      {/* Başlık */}
+      <h3 className="text-base font-semibold">
+        Loudest à la Madison #1 (L’integral)
+      </h3>
+
+      {/* Açıklama */}
+      <p className="text-sm text-gray-500 leading-snug">
+        We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+      </p>
+
+      {/* Tarih ve yorum */}
+      <div className="flex justify-between items-center text-xs text-gray-400 mt-2">
+        <span>22 April 2021</span>
+        <span>💬 10 comments</span>
+      </div>
+
+      {/* Learn More */}
+      <div className="mt-2">
+        <button className="text-[#23A6F0] text-sm font-medium flex items-center gap-1">
+          Learn More <span className="text-lg">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  {/* Featured Product Card - 2 */}
+<div className="mt-6 bg-white rounded shadow-sm overflow-hidden">
+  <div className="relative">
+    <img
+      src="/src/assets/new2.jpg" 
+      alt="Colorful Abstract"
+      className="w-full h-52 object-cover"
+    />
+    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+      NEW
+    </span>
+  </div>
+
+  <div className="p-4 flex flex-col gap-2">
+    <div className="text-xs text-gray-400 space-x-2">
+      <span>Google</span>
+      <span>Trending</span>
+      <span>New</span>
+    </div>
+
+    <h3 className="text-base font-semibold">
+      Loudest à la Madison #1 (L’intégral)
+    </h3>
+
+    <p className="text-sm text-gray-500 leading-snug">
+      We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+    </p>
+
+    <div className="flex justify-between items-center text-xs text-gray-400 mt-2">
+      <span>22 April 2021</span>
+      <span>💬 10 comments</span>
+    </div>
+
+    <div className="mt-2">
+      <button className="text-[#23A6F0] text-sm font-medium flex items-center gap-1">
+        Learn More <span className="text-lg">→</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+{/* Featured Product Card - 3 */}
+<div className="mt-6 bg-white rounded shadow-sm overflow-hidden">
+  <div className="relative">
+    <img
+      src="/src/assets/new3.jpg" // Bu görseli assets klasörüne ekle
+      alt="Colorful Window Scene"
+      className="w-full h-52 object-cover"
+    />
+    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+      NEW
+    </span>
+  </div>
+
+  <div className="p-4 flex flex-col gap-2">
+    <div className="text-xs text-gray-400 space-x-2">
+      <span>Google</span>
+      <span>Trending</span>
+      <span>New</span>
+    </div>
+
+    <h3 className="text-base font-semibold">
+      Loudest à la Madison #1 (L’intégral)
+    </h3>
+
+    <p className="text-sm text-gray-500 leading-snug">
+      We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+    </p>
+
+    <div className="flex justify-between items-center text-xs text-gray-400 mt-2">
+      <span>22 April 2021</span>
+      <span>💬 10 comments</span>
+    </div>
+
+    <div className="mt-2">
+      <button className="text-[#23A6F0] text-sm font-medium flex items-center gap-1">
+        Learn More <span className="text-lg">→</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
     </PageContent>
   );
 }
