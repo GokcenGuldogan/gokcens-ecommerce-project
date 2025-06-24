@@ -442,7 +442,7 @@ export default function HomePage() {
     </div>
 
     <div className="mt-2">
-      <button className="text-[#23A6F0] text-sm font-medium flex items-center gap-1">
+      <button className="text-[#23A6F0] text-sm font-medium items-center gap-1">
         Learn More <span className="text-lg">→</span>
       </button>
     </div>
