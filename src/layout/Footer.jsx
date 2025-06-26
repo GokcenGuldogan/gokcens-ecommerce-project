@@ -1,68 +1,90 @@
+// src/layout/Footer.jsx
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+
 export default function Footer() {
   return (
-    <footer className="w-full max-w-[414px] mx-auto px-6 mt-16 bg-white text-gray-700 text-sm">
-      {/* Bandage ve ikonlar */}
-      <div className="flex flex-col gap-2 text-left">
-        <h2 className="text-xl font-bold">Bandage</h2>
-        <div className="flex flex-col gap-1 pl-1">
-          <a href="#" className="text-blue-600">🌐</a>
-          <a href="#" className="text-blue-600">🐦</a>
-          <a href="#" className="text-blue-600">📘</a>
+    <footer className="bg-white px-6 py-10 w-full max-w-[1200px] mx-auto text-gray-700 text-sm">
+      {/* Logo & Icons */}
+      <div className="flex flex-col items-center text-center mb-6">
+        <h1 className="text-2xl font-bold text-black">Bandage</h1>
+        <div className="flex gap-4 mt-2 text-blue-600 text-lg">
+          <FaFacebookF />
+          <FaInstagram />
+          <FaTwitter />
         </div>
       </div>
 
-      {/* Dört kolonlu bilgi bölümü */}
-      <div className="mt-10 grid grid-cols-2 gap-y-8 gap-x-6 text-left">
+      {/* Link Sections - Alt Alta */}
+      <div className="flex flex-col gap-6 mb-8">
+        {/* Company Info */}
         <div>
-          <h3 className="text-sm font-semibold mb-2">Company Info</h3>
-          <p>About Us</p>
-          <p>Carrier</p>
-          <p>We are hiring</p>
-          <p>Blog</p>
+          <h3 className="font-semibold text-black mb-2">Company Info</h3>
+          <ul className="space-y-1">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
         </div>
+
+        {/* Legal */}
         <div>
-          <h3 className="text-sm font-semibold mb-2">Features</h3>
-          <p>Business Marketing</p>
-          <p>User Analytic</p>
-          <p>Live Chat</p>
-          <p>Unlimited Support</p>
+          <h3 className="font-semibold text-black mb-2">Legal</h3>
+          <ul className="space-y-1">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
         </div>
+
+        {/* Features */}
         <div>
-          <h3 className="text-sm font-semibold mb-2">Resources</h3>
-          <p>IOS & Android</p>
-          <p>Watch a Demo</p>
-          <p>Customers</p>
-          <p>API</p>
+          <h3 className="font-semibold text-black mb-2">Features</h3>
+          <ul className="space-y-1">
+            <li>Business Marketing</li>
+            <li>User Analytic</li>
+            <li>Live Chat</li>
+            <li>Unlimited Support</li>
+          </ul>
         </div>
+
+        {/* Resources */}
         <div>
-          <h3 className="text-sm font-semibold mb-2">Legal</h3>
-          <p>About Us</p>
-          <p>Carrier</p>
-          <p>We are hiring</p>
-          <p>Blog</p>
+          <h3 className="font-semibold text-black mb-2">Resources</h3>
+          <ul className="space-y-1">
+            <li>IOS & Android</li>
+            <li>Watch a Demo</li>
+            <li>Customers</li>
+            <li>API</li>
+          </ul>
         </div>
       </div>
 
-      {/* Email abonelik alanı */}
-      <div className="mt-10 flex flex-col items-start gap-2">
-        <input
-          type="email"
-          placeholder="Your Email"
-          className="border border-gray-300 px-4 py-2 rounded w-full"
-        />
-        <button className="bg-[#23A6F0] text-white px-6 py-2 rounded text-sm font-medium w-full">
-          Subscribe
-        </button>
-        <p className="text-gray-400 text-xs mt-1">Lore imp sum dolor Amit</p>
+      {/* Subscribe */}
+      <div className="mb-8">
+        <h3 className="font-semibold text-black mb-2">Get In Touch</h3>
+        <div className="flex flex-col gap-2">
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="border border-gray-300 px-4 py-2 rounded text-sm"
+          />
+          <button className="bg-blue-500 text-white py-2 rounded font-medium">
+            Subscribe
+          </button>
+        </div>
+        <p className="text-xs text-gray-400 mt-3">Lorem impsum dolor Amit</p>
       </div>
 
-      {/* Alt yazı */}
-      <div className="mt-10 border-t pt-4 text-center text-gray-400 text-xs">
+      {/* Bottom Note */}
+      <p className="text-center text-xs text-gray-400 mt-6">
         Made With Love By Finland All Right Reserved
-      </div>
+      </p>
     </footer>
   );
 }
+
 
 
 

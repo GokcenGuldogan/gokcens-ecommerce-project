@@ -1,5 +1,5 @@
 // src/pages/HomePage.js
-import PageContent from "../layout/PageContent";
+
 import headerImg from "../assets/header.jpg";
 import menImg from "../assets/men.jpg";
 import womenImg from "../assets/women.jpg";
@@ -7,31 +7,35 @@ import kidsImg from "../assets/kids.jpg";
 import accessoriesImg from "../assets/accessories.jpg";
 
 
-
-
 export default function HomePage() {
   return (
-    <PageContent>
+    <>
       {/* HERO */}
-      <div
-        className="relative w-full h-[360px] rounded overflow-hidden text-white mt-6"
-        style={{
-          backgroundImage: `url(${headerImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 flex flex-col justify-center items-start gap-3 px-6">
-          <p className="text-xs tracking-widest uppercase">Summer 2020</p>
-          <h1 className="text-3xl font-bold leading-tight">NEW COLLECTION</h1>
-          <p className="text-sm text-white/90">
-            We know how large objects will act, but things on a small scale.
-          </p>
-          <button className="bg-[#38CB89] text-white py-2 px-6 rounded text-sm font-medium mt-2">
-            SHOP NOW
-          </button>
-        </div>
-      </div>
+<section
+  className="w-full h-[550px] bg-cover bg-center flex items-center"
+  style={{
+    backgroundImage: `url(${headerImg})`,
+  }}
+>
+  <div className="max-w-[1200px] mx-auto px-6 md:px-10 text-white">
+    <div className="max-w-[500px] space-y-4">
+      <p className="text-sm tracking-widest uppercase text-gray-100">Summer 2020</p>
+      <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        NEW COLLECTION
+      </h1>
+      <p className="text-base text-gray-100">
+        We know how large objects will act, but things on a small scale.
+      </p>
+      <button className="bg-green-500 text-white px-6 py-3 text-sm font-semibold rounded shadow w-fit">
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
 
       {/* EDITOR'S PICK */}
       <section className="mt-10">
@@ -296,11 +300,7 @@ export default function HomePage() {
       className="w-full object-cover rounded mb-4"
     />
 
-    <p className="text-sm text-blue-600 font-medium uppercase tracking-wide">Practice Advice</p>
-    <h3 className="text-xl font-bold mt-1">Featured Products</h3>
-    <p className="text-sm text-gray-500 mt-2 leading-snug px-2">
-      Problems trying to resolve the conflict between the two major
-    </p>
+    
   </div>
 </section>
 
@@ -452,8 +452,8 @@ export default function HomePage() {
 
 </section>
 
-
-    </PageContent>
+</>
+    
   );
 }
 
