@@ -1,6 +1,5 @@
 // src/pages/HomePage.js
 import ProductCard from "../components/ProductCard";
-import Slider from "../components/Slider";
 import headerImg from "../assets/header.jpg";
 import menImg from "../assets/men.jpg";
 import womenImg from "../assets/women.jpg";
@@ -16,32 +15,42 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-<section
-  className="w-full h-[550px] bg-cover bg-center flex items-center"
-  style={{
-    backgroundImage: `url(${headerImg})`,
-  }}
->
-  <div className="max-w-[1200px] mx-auto px-6 md:px-10 text-white">
-    <div className="max-w-[500px] space-y-4">
-      <p className="text-sm tracking-widest uppercase text-gray-100">Summer 2020</p>
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-        NEW COLLECTION
-      </h1>
-      <p className="text-base text-gray-100">
-        We know how large objects will act, but things on a small scale.
-      </p>
-      <button className="bg-green-500 text-white px-6 py-3 text-sm font-semibold rounded shadow w-fit">
-        SHOP NOW
+
+
+      <section
+      className="w-full bg-cover bg-center bg-no-repeat text-white relative"
+      style={{ backgroundImage: `url(${headerImg})` }}
+    >
+      {/* İçerik Konteyneri */}
+      <div className="max-w-[1200px] mx-auto pl-20 pr-2 py-16 flex flex-col items-start justify-center min-h-[480px] gap-5">
+        {/* Üst Yazılar */}
+        <p className="text-sm tracking-widest uppercase">SUMMER 2020</p>
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          NEW COLLECTION
+        </h1>
+        <p className="text-sm max-w-md leading-relaxed text-white/90">
+          We know how large objects will act, but things on a small scale.
+        </p>
+
+        {/* Buton */}
+        <button className="bg-[#38CB89] text-white py-3 px-6 rounded text-sm font-medium">
+          SHOP NOW
+        </button>
+      </div>
+
+      {/* Ok Butonları (aynı stil) */}
+      <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+        <span className="text-lg font-bold">&#10094;</span> {/* Sol üçgen ok */}
       </button>
-    </div>
-  </div>
-</section>
 
+      <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10">
+        <span className="text-lg font-bold">&#10095;</span> {/* Sağ üçgen ok */}
+      </button>
+    </section>
 
+  
 
-
-
+      {/* EDITOR'S PICK*/}
 <section className="mt-10">
   <h2 className="text-center text-sm font-semibold text-gray-700">EDITOR'S PICK</h2>
   <p className="text-center text-xs text-gray-500 mt-1 px-6">
@@ -83,9 +92,7 @@ export default function HomePage() {
   </div>
 </section>
 
-{/* SLIDER */}
 
-<Slider />
 
 
 {/* BESTSELLER */}
