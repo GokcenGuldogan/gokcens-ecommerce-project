@@ -1,6 +1,7 @@
 // src/layout/Header.jsx
 import { Search, User, ShoppingCart } from "lucide-react";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -34,11 +35,12 @@ export default function Header() {
 
           {/* Menü */}
           <nav className="mt-4 md:mt-0 flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-gray-900 font-medium">
-            <a href="#" className="text-gray-900">Home</a>
-            <a href="#" className="text-gray-900">Product</a>
-            <a href="#" className="text-gray-900">Pricing</a>
-            <a href="#" className="text-gray-900">Contact</a>
-          </nav>
+  <Link to="/" className="text-gray-900">Home</Link>
+  <Link to="/product" className="text-gray-900">Product</Link>
+  <Link to="/pricing" className="text-gray-900">Pricing</Link>
+  <Link to="/contact" className="text-gray-900">Contact</Link>
+</nav>
+
 
           {/* İkonlar */}
           <div className="hidden md:flex items-center gap-4 mt-4 md:mt-0">
