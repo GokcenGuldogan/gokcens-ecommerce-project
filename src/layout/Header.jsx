@@ -33,13 +33,59 @@ export default function Header() {
           {/* Logo */}
           <div className="text-xl font-bold text-center md:text-left">BrandName</div>
 
-          {/* Menü */}
-          <nav className="mt-4 md:mt-0 flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-gray-900 font-medium">
-  <Link to="/" className="text-gray-900">Home</Link>
-  <Link to="/product" className="text-gray-900">Product</Link>
-  <Link to="/pricing" className="text-gray-900">Pricing</Link>
-  <Link to="/contact" className="text-gray-900">Contact</Link>
+          
+          {/* MENÜLER */}
+
+{/* Desktop Menüsü */}
+<nav className="hidden md:flex flex-row justify-center items-center gap-4 text-sm font-medium">
+  <Link to="/HomePage" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Home</Link>
+  <div className="relative group">
+  <Link
+    to="/shop"
+    className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition"
+  >
+    Shop
+  </Link>
+
+  {/* Açılır kutu */}
+  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[520px] bg-white shadow-xl rounded-lg hidden group-hover:flex p-6 gap-6 z-30">
+    {/* Sütun 1 */}
+    <div className="flex flex-col gap-2 text-sm text-gray-800">
+      <span className="font-semibold">Kadin</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Bags</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Belts</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Cosmetic</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Bags</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Hats</span>
+    </div>
+    {/* Sütun 2 */}
+    <div className="flex flex-col gap-2 text-sm text-gray-800">
+      <span className="font-semibold">Erkek</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Bags</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Belts</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Cosmetics</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Bags</span>
+      <span className="hover:text-[#38CB89] cursor-pointer">Hats</span>
+    </div>
+  </div>
+</div>
+
+
+  <Link to="/about" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">About</Link>
+  <Link to="/blog" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Blog</Link>
+  <Link to="/contact" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Contact</Link>
+  <Link to="/pages" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Pages</Link>
 </nav>
+
+
+{/* Mobile Menüsü */}
+<nav className="flex flex-col md:hidden justify-center items-center gap-2 text-sm font-medium mt-4">
+  <Link to="/home" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Home</Link>
+  <Link to="/product" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Product</Link>
+  <Link to="/pricing" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Pricing</Link>
+  <Link to="/contact" className="text-gray-900 visited:text-gray-900 hover:text-[#38CB89] transition">Contact</Link>
+</nav>
+
 
 
           {/* İkonlar */}
